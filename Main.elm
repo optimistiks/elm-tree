@@ -26,7 +26,8 @@ view model =
   div
     []
     [
-        p [] [ text (toString model.tree) ]
+        p [] [ text (toString model.tree) ],
+        button [ onClick (Tree.Add "add node" "first line") ] [ text "Add node" ]
     ]
 
 main : Program Never
